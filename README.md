@@ -14,6 +14,8 @@ Personal dotfiles for my PCs
 - oh-my-posh
 - vim
 - Alacritty
+	- alacritty-colorscheme (Python) 
+	- eendroroy-colorschemes
 - vim-plug
 	- ultisnips
 	- vimtex
