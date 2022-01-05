@@ -5,6 +5,10 @@
 # terminal emulator
 super + Return
 	urxvt
+	
+# browser
+super + b
+	chromium
 
 # program launcher
 super + @space
