@@ -12,17 +12,25 @@ super + b
 
 # file manager
 super + f
-	thunar
+	kitty ranger
 
 # program launcher
 super + @space
-	rofi -show run
+	rofi -show drun
 
 # backlight control
 XF86MonBrightnessDown
 	xbacklight -dec 5
 XF86MonBrightnessUp
 	xbacklight -inc 5
+
+# volume control
+XF86AudioRaiseVolume
+	pulsemixer --change-volume +5
+XF86AudioLowerVolume
+	pulsemixer --change-volume -5
+XF86AudioMute
+	pulsemixer --toggle-mute
 
 # make sxhkd reload its configuration files:
 super + Escape

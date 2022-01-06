@@ -1,0 +1,18 @@
+# Zathura configuration file
+map i recolor
+map w adjust_window width
+
+# Open document in fit-width mode by default
+set adjust-open "width"
+
+set font "FiraCode NF Mono 12"
+
+set guioptions none
+
+set default-bg		"#282828"
+set default-fg		"#ebdbb2"
+
+set recolor		true
+set recolor-lightcolor	"#282828"
+set recolor-darkcolor	"#ebdbb2"
+set recolor-keephue	true
