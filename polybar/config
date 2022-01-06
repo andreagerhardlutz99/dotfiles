@@ -3,11 +3,9 @@
 background = #0000
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
-foreground = #ebdbb2
+foreground = #d8dee9
 foreground-alt = #555
-primary = #d79921
-secondary = #e60053
-alert = #bd2c40
+primary = #81a1c1
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -63,6 +61,10 @@ label = %title:0:30:...%
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
+
+format = <label-indicator>
+label-indicator-on-capslock = 
+label-indicator-off-capslock =
 
 label-layout = %layout%
 
@@ -193,10 +195,10 @@ menu-0-1-exec = menu-open-2
 menu-1-0 = cancel
 menu-1-0-exec = menu-open-0
 menu-1-1 = reboot
-menu-1-1-exec = reboot
+menu-1-1-exec = systemctl reboot
 
 menu-2-0 = power off
-menu-2-0-exec = poweroff
+menu-2-0-exec = systemctl poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 

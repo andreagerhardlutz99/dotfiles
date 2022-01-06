@@ -12,7 +12,7 @@ super + b
 
 # file manager
 super + f
-	kitty ranger
+	pcmanfm
 
 # program launcher
 super + @space
