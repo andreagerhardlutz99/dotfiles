@@ -16,5 +16,5 @@ Plug 'KeitaNakamura/tex-conceal.vim'
     hi Conceal ctermbg=none
 
 setlocal spell
-set spelllang=en_us
+set spelllang=it,en_us
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
