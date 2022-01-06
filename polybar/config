@@ -29,7 +29,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "Inter:style=regular:size=12:antialias=true;2"
+font-0 = "Roboto Mono NF:size=12:antialias=true;2"
 font-1 = "Roboto Mono NF:style=regular:size=12:antialias=true;2"
 
 modules-left = bspwm
