@@ -15,6 +15,10 @@ Plug 'KeitaNakamura/tex-conceal.vim'
     let g:tex_conceal='abdmg'
     hi Conceal ctermbg=none
 
+call plug#end()
+
 setlocal spell
 set spelllang=it,en_us
 inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+syntax enable
+set number
