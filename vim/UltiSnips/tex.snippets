@@ -13,27 +13,34 @@ endglobal
 
 
 snippet template "Basic template" b
-\documentclass[a4paper]{article}
+\documentclass[12pt]{article}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage[dutch]{babel}
-\usepackage{amsmath, amssymb}
-
-
-% figure support
-\usepackage{import}
-\usepackage{xifthen}
-\pdfminorversion=7
-\usepackage{pdfpages}
-\usepackage{transparent}
-\newcommand{\incfig}[1]{%
-	\def\svgwidth{\columnwidth}
-	\import{./figures/}{#1.pdf_tex}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
 }
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{imakeidx}
+\usepackage{amsmath,amsthm,amssymb,amscd}
+\usepackage{siunitx,cancel,xparse,physics}
+\usepackage{booktabs,multirow,wrapfig}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{graphicx,subfig,tikz,pgfplots,circuitikz}
+\usepackage{import,xifthen,pdfpages,transparent}
+\usepackage{xcolor}
+\usepackage{mdframed}
 
-\pdfsuppresswarningpagegroup=1
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./media/}{#1.pdf_tex}
+}
+\pgfplotsset{compat=1.18}
+\theoremstyle{definition}
 
 \begin{document}
 	$0
