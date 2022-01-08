@@ -14,7 +14,11 @@ bspc config focused_border_color '#81A1C1'
 bspc config normal_border_color '#2E3440'
 
 bspc rule -a Zathura state=tiled
+bspc rule -a URxvt state=floating
+bspc rule -a Inkscape desktop=^2 follow=on
 
 polybar example &
 picom --config ~/.config/picom.conf &
 nitrogen Pictures/background.png --set-auto
+inkscape-figures watch
+python3 ~/inkscape-shortcut-manager/main.py

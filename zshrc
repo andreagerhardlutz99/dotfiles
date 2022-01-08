@@ -12,3 +12,6 @@ compinit
 # End of lines added by compinstall
 
 eval "$(oh-my-posh --init --shell zsh --config ~/.poshthemes/spaceship.omp.json)"
+
+export PATH=/home/lutza/.local/lib:$PATH
+export PATH=/home/lutza/.local/bin:$PATH
