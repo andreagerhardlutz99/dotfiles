@@ -5,6 +5,11 @@ colorscheme nord
 setlocal spell
 set spelllang=it,en_us
 
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 call plug#begin()
 
 Plug 'sirver/ultisnips'

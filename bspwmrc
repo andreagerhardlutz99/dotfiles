@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV
+bspc monitor -d I II III IV V
 
 bspc config border_width   3
 bspc config window_gap     12
@@ -15,10 +15,10 @@ bspc config normal_border_color '#2E3440'
 
 bspc rule -a Zathura state=tiled
 bspc rule -a URxvt state=floating
-bspc rule -a Inkscape desktop=^2 follow=on
+bspc rule -a Inkscape desktop=^5 follow=on
 
 polybar example &
 picom --config ~/.config/picom.conf &
 nitrogen Pictures/background.png --set-auto
-inkscape-figures watch
 python3 ~/inkscape-shortcut-manager/main.py
+xrdb -merge ~/.Xresources
