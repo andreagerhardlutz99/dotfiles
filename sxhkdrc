@@ -15,7 +15,7 @@ super + f
 	pcmanfm
 
 # program launcher
-super + @space
+alt + @space
 	rofi -show drun
 
 # backlight control
